@@ -8,6 +8,18 @@ The tensor has five dimensions:
 3 & 4. Third and Fourth dimension gives the width and height of image(i.e. shape of pixels)
 5. Gives number of channels of the image(i.e. if the images are in grayscale that number of channels will be 1, else if it is RGB it will be 3)
 
+Uses can be used in the following scenarios:
+1. For easy loading of inputs to 3D-CNN (Convolution Neural Networks) models. The ouput of the video_reader.read(paths) can be directly given as input to the 3D CNN model.
+2. For easy loading of inputs to RNN (Recurrent Neural Network) models. With little changes in the output the modified output can be given as input to RNN model
+3. For extracting features for data mining jobs.
+
+What are inputs of the VideoReader class:
+1. target_size - type is tuple - It represents the size of the pixels of the given array
+2. to_gray - type is boolen - It represents whether the image pixels should be in gray scale or rgb
+3. max_frames - type integer - It represents the total number of frames required
+4. required_fps - type integer - It represents the how many frames are required in a given second
+5. normalize_pixels - type boolean - It represents whether the pixels are to normalized between 0 to 1 (currently not implemented)
+
 How to use the video reader:
 Step 1. Create a Video Reader Object as follows:
 Step 2. Create a list of paths of video files.
@@ -33,4 +45,10 @@ Sample code is given below
   
   Output: (2, 40, 128, 128, 1)
 
-```
+``
+
+Future work:
+1. To implement normalization
+2. To implement from where the pixels need to be picked up i.e. the current implementation only picks the first frames upto limit max_frames, need to implement from last, middle and random
+3. To properly handle default modes
+4. The last dimension i.e. the channel dimension is not handled for rgb images
