@@ -53,3 +53,4 @@ Future work:
 3. To properly handle default modes
 4. The last dimension i.e. the channel dimension is not handled for rgb images
 5. To create RNN based output
+6. To publish as a libarary in pip
