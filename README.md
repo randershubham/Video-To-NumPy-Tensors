@@ -45,7 +45,7 @@ Sample code is given below
   
   Output: (2, 40, 128, 128, 1)
 
-``
+```
 
 Future work:
 1. To implement normalization
