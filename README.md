@@ -49,6 +49,7 @@ Sample code is given below
 
 Future work:
 1. To implement normalization
-2. To implement from where the pixels need to be picked up i.e. the current implementation only picks the first frames upto limit max_frames, need to implement from last, middle and random
+2. To implement from where the pixels need to be picked up i.e. the current implementation only picks up the frames from first index, need to implement from last, middle and random indexes.
 3. To properly handle default modes
 4. The last dimension i.e. the channel dimension is not handled for rgb images
+5. To create RNN based output
