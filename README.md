@@ -21,9 +21,9 @@ What are inputs of the VideoReader class:
 5. normalize_pixels - type boolean - It represents whether the pixels are to normalized between 0 to 1 (currently not implemented)
 
 How to use the video reader?
-Step 1. Create a Video Reader Object as follows
-Step 2. Create a list of paths of video files.
-Step 3. Use the function read_videos(list_of_videos_files)
+  Step 1: Create a Video Reader Object as follows
+  Step 2: Create a list of paths of video files.
+  Step 3: Use the function read_videos(list_of_videos_files)
 
 Sample code is given below
 ```
